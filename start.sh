@@ -6,6 +6,7 @@ if [[ ! -f /app/data/.initialized ]]; then
   echo "Fresh installation, setting up data directory..."
   install -d -D -m 0755 -o cloudron -g cloudron /app/data/log /app/data/lib/netdata/www /app/data/cache/netdata /app/data/lib/netdata /app/data/etc
   cp -a /etc/netdata/* /app/data/etc/
+  sed -i -r "s/(^.*hostname = )(.*)$/\1 $CLOUDRON_APP_DOMAIN/" /app/data/etc/netdata.conf
   chown -R cloudron:cloudron /app/data && chmod -R 777 /app/data  
   touch /app/data/.initialized
   echo "Init Done."

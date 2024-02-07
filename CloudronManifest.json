@@ -5,6 +5,8 @@
   "description": "Monitor everything in real time. For free.",
   "tagline": "Monitor everything in real time",
   "version": "0.0.1",
+  "upstreamVersion": "1.44.1",
+  "healthCheckPath": "/",
   "httpPort": 19999,
   "tcpPorts": {
     "STREAMING_PORT": {
@@ -20,5 +22,6 @@
   },
   "manifestVersion": 2,
   "website": "https://www.netdata.cloud",
+  "icon": "file://logo.png",
   "tags": [ "alerting", "monitoring" ]
 }
