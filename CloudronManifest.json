@@ -6,6 +6,14 @@
   "tagline": "Monitor everything in real time",
   "version": "0.0.1",
   "httpPort": 19999,
+  "tcpPorts": {
+    "STREAMING_PORT": {
+      "title": "Streaming Port",
+      "description": "Port streaming",
+      "defaultValue": 19999,
+      "containerPort": 19999
+    }
+  },
   "addons": {
     "localstorage": {},
     "proxyAuth": {}
