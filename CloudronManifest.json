@@ -1,0 +1,16 @@
+{
+  "id": "cloud.netdata.cloudronapp",
+  "title": "Netdata",
+  "author": "Christophe VACHERY",
+  "description": "Monitor everything in real time. For free.",
+  "tagline": "Monitor everything in real time",
+  "version": "0.0.1",
+  "httpPort": 19999,
+  "addons": {
+    "localstorage": {},
+    "proxyAuth": {}
+  },
+  "manifestVersion": 2,
+  "website": "https://www.netdata.cloud",
+  "tags": [ "alerting", "monitoring" ]
+}
