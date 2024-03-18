@@ -1,6 +1,6 @@
 FROM cloudron/base:4.2.0@sha256:46da2fffb36353ef714f97ae8e962bd2c212ca091108d768ba473078319a47f4
 
-ARG VERSION=1.44.1
+ARG VERSION=1.44.3
 
 RUN apt update && apt upgrade -y
 RUN apt install -y --no-install-recommends \
@@ -26,6 +26,7 @@ RUN apt install -y --no-install-recommends \
     curl \
     python2 \
     python3 \
+    sendmail \
     cmake && \
     rm -rf /var/cache/apt /var/lib/apt/lists
 

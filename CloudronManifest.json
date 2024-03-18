@@ -4,8 +4,9 @@
   "author": "Christophe VACHERY",
   "description": "Monitor everything in real time. For free.",
   "tagline": "Monitor everything in real time",
-  "version": "0.0.1",
-  "upstreamVersion": "1.44.1",
+  "version": "0.0.2",
+  "upstreamVersion": "1.44.3",
+  "postInstallMessage": "file://POSTINSTALL.md",
   "healthCheckPath": "/",
   "httpPort": 19999,
   "tcpPorts": {

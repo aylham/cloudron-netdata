@@ -1,4 +1,4 @@
-The netdata configuration folder is `/app/data/etc` therefore to set up 
+The netdata configuration folder is `/app/data/etc` therefore to set up
 streaming you can add a file `stream.conf using the file explorer and
 restart the app.
 
@@ -10,3 +10,11 @@ Using this node as a parent streaming node.
 
 Add a file `stream.conf` in `/app/data/etc` using the file manager.
 Use the above documentation to know what to put in this file
+
+Basic example :
+
+```
+[11111111-2222-3333-4444-555555555555]
+    enabled = yes
+    default memory mode = dbengine
+```
